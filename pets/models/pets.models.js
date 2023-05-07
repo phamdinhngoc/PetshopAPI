@@ -1,8 +1,8 @@
 import db from '../../db/db.js'
 
-export const getItem = id => {
+export const getItem = (id) => {
     try {
-        const pet = db?.pets?.filter(pet => pets?.id === id)[0]
+        const pet = db?.pets?.filter(pet => pet?.id === id)[0]
         return pet
     } catch (err) {
         console.log('Error', err)
@@ -42,11 +42,11 @@ export const addItem = (data) => {
     }
 }
 
-export const deleteItem = id => {
+export const deleteItem = (id) => {
     try {
         //delete item from db
         const index = db.pets.findIndex(pet => pet.id === id)
-        if (index === -1) throw new Error('Pet not found')
+        if (index === -1) console.log('Pet not found')//throw new Error('Pet not found')
         else {
             db.pets.splice(index, 1)
             return db.pets

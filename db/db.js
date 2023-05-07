@@ -3,21 +3,21 @@ const db = {
         {
             id: 1,
             name: 'Rex',
-            typ: 'dog',
+            type: 'dog',
             age: 3,
             breed: 'labrador',
         },
         {
             id: 2,
             name: 'Fido',
-            typ: 'dog',
+            type: 'dog',
             age: 1,
             breed: 'poodle',
         },
         {
             id: 3,
             name: 'Mittens',
-            typ: 'cat',
+            type: 'cat',
             age: 2,
             breed: 'tabby',
 
